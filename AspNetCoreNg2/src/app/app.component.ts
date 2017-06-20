@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { AppService } from './app.service'
+import { Subscription }   from 'rxjs/Subscription';
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<router-outlet></router-outlet>`
 })
-export class AppComponent {
-  title = 'app';
+
+export class AppComponent implements OnInit{
+
+constructor(private appService: AppService) { }
+
+  //  apiValues: string[] = [];
+
+   ngOnInit() {
+
+    //  this.appService.getValues().subscribe(elems => {
+    //         this.apiValues = elems;
+    //     });;
+
+   }
 }

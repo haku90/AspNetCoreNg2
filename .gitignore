@@ -27,6 +27,13 @@ autom4te.cache/
 tarballs/
 test-results/
 Thumbs.db
+[Tt]est[Rr]esult*
+node_modules
+**/wwwroot/app/**/*.js
+**/wwwroot/app/**/*.map
+bs-config.js
+.DS_Store
+**/dist
 
 # Mac bundle stuff
 *.dmg

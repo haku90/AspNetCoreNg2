@@ -1,11 +1,10 @@
-﻿﻿import { Injectable } from '@angular/core';
-import { ResponseService } from '../commons/response.service'
+import { Injectable } from '@angular/core';
 import { Observable } from "rxjs/Observable";
 import { Http } from '@angular/http'
 import 'rxjs/Rx';
 
 @Injectable()
-export class AppService {
+export class TestService {
 
 constructor(private http: Http) { }
 
